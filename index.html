@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA Admin Panel</title>
+</head>
+
+<body>
+
+  <!-- Particle background -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- LOGIN -->
+
+  <section id="loginPage">
+
+    <div id="loginBox">
+
+      <div class="logo">N</div>
+
+      <h1>NOVA</h1>
+
+      <p class="subtitle">ADMIN CONTROL SYSTEM</p>
+
+      <label for="username">USERNAME</label>
+      <input
+        id="username"
+        type="text"
+        placeholder="USERNAME"
+        autocomplete="off"
+      >
+
+      <label for="password">PASSWORD</label>
+      <input
+        id="password"
+        type="password"
+        placeholder="PASSWORD"
+      >
+
+      <button id="loginButton" type="button">
+        ACCESS SYSTEM
+      </button>
+
+      <div id="message"></div>
+
+    </div>
+
+  </section>
+
+
+  <!-- DASHBOARD -->
+
+  <section id="dashboard">
+
+    <!-- SIDE DASHBOARD -->
+
+    <aside id="sidebar">
+
+      <div class="sideLogo">N</div>
+
+      <h2>NOVA</h2>
+
+      <button class="dashButton" id="homeButton">
+        ◈ DASHBOARD
+      </button>
+
+      <button class="dashButton" id="updatesButton">
+        ◇ UPDATES
+      </button>
+
+      <button class="dashButton" id="commandsButton">
+        ◆ COMMANDS
+      </button>
+
+      <button class="dashButton" id="systemButton">
+        ◉ SYSTEM
+      </button>
+
+      <button class="dashButton" id="logoutButton">
+        ⟲ LOGOUT
+      </button>
+
+    </aside>
+
+
+    <!-- MAIN DASHBOARD -->
+
+    <main id="dashboardMain">
+
+      <header id="dashboardHeader">
+
+        <div>
+          <h1>NOVA ADMIN PANEL</h1>
+          <p>SYSTEM CONTROL INTERFACE</p>
+        </div>
+
+        <div id="status">
+          ● ONLINE
+        </div>
+
+      </header>
+
+
+      <div id="dashboardContent">
+
+        <!-- DASHBOARD HOME -->
+
+        <div id="homePanel" class="dashboardPanel">
+
+          <h2>COMMAND CENTER</h2>
+
+          <p>Welcome back, NOVA administrator.</p>
+
+          <div class="cards">
+
+            <div class="card">
+              <span>SYSTEM</span>
+              <strong>ONLINE</strong>
+            </div>
+
+            <div class="card">
+              <span>SECURITY</span>
+              <strong>ACTIVE</strong>
+            </div>
+
+            <div class="card">
+              <span>ACCESS</span>
+              <strong>GRANTED</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- UPDATES -->
+
+        <div
+          id="updatesPanel"
+          class="dashboardPanel"
+        >
+
+          <h2>SYSTEM UPDATES</h2>
+
+          <div class="updateItem">
+            <strong>NOVA CORE</strong>
+            <span>System running normally.</span>
+          </div>
+
+          <div class="updateItem">
+            <strong>SECURITY</strong>
+            <span>Authentication system active.</span>
+          </div>
+
+          <div class="updateItem">
+            <strong>PARTICLE ENGINE</strong>
+            <span>Visual engine ready.</span>
+          </div>
+
+        </div>
+
+
+        <!-- COMMANDS -->
+
+        <div
+          id="commandsPanel"
+          class="dashboardPanel"
+        >
+
+          <h2>COMMAND CENTER</h2>
+
+          <button class="commandButton">
+            RUN SYSTEM CHECK
+          </button>
+
+          <button class="commandButton">
+            REFRESH CORE
+          </button>
+
+          <button class="commandButton">
+            SCAN SYSTEM
+          </button>
+
+        </div>
+
+
+        <!-- SYSTEM -->
+
+        <div
+          id="systemPanel"
+          class="dashboardPanel"
+        >
+
+          <h2>SYSTEM STATUS</h2>
+
+          <p>CORE: ONLINE</p>
+          <p>SECURITY: ACTIVE</p>
+          <p>NETWORK: READY</p>
+          <p>ACCESS LEVEL: ADMIN</p>
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </section>
+
+</body>
+</html>
